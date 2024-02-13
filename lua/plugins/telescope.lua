@@ -7,9 +7,9 @@ return {
             -- setup keymaps
             local builtin = require('telescope.builtin')
             vim.keymap.set('n', '<leader><leader>', builtin.find_files, { desc = "Open telescope File Finder"})
-            vim.keymap.set('n', '<leader>/', builtin.live_grep, {})
-            vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-            vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+            vim.keymap.set('n', '<leader>/', builtin.live_grep, { desc = "Live Grep"})
+            vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Telescope Show Buffers"})
+            vim.keymap.set('n', '<leader>fh', builtin.help_tags, {desc = "Telescope help tags"})
 
 
             -- telescope action keymaps (keymaps for when the telescope ui is on)

@@ -11,7 +11,7 @@ return {
     config = function()
         vim.keymap.set("n", "<leader>e", function()
             vim.cmd.Neotree("toggle")
-        end)
+        end, {desc = "Open Neotree"})
         vim.fn.sign_define("DiagnosticSignError",
         { text = " ", texthl = "DiagnosticSignError" })
         vim.fn.sign_define("DiagnosticSignWarn",
