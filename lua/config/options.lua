@@ -37,3 +37,10 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 
 
+-- incremental search
+vim.opt.incsearch = true
+
+vim.opt.updatetime = 50
+
+
+
