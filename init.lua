@@ -76,6 +76,9 @@ cmp.setup({
     {name = 'buffer', keyword_length = 3},
   },
   formatting = lsp_zero.cmp_format(),
+    completion = {
+    completeopt = 'menu,menuone,noinsert'
+  },
   mapping = cmp.mapping.preset.insert({
     ['<C-Space>'] = cmp.mapping.complete({}),
     ['<C-e>'] = cmp.mapping.close(),
@@ -107,6 +110,4 @@ cmp.setup({
     end, {"i", "s"}),
   }),
 })
-
-
 

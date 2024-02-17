@@ -7,9 +7,9 @@ return {
     local mappings = {
       {
         "n",
-        "<C-l>",
+        "<C-l>at",
         function()
-          terminal.send(ft_cmds[vim.bo.filetype])
+          -- terminal.send(ft_cmds[vim.bo.filetype])
         end,
       },
       {
